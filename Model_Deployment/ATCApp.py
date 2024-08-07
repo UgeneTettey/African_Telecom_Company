@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 # load the model
-model = pickle.load(open('new_xgb.pkl', 'rb'))
+model = pickle.load(open('new_xgb_model.pkl', 'rb'))
 
 # categorical features
 categorical_features = {
