@@ -20,11 +20,11 @@ encoder_dict = {feature: LabelEncoder().fit(values) for feature, values in categ
 st.set_page_config(page_title="Customer Churn Prediction", page_icon=":bar_chart:", layout="centered", initial_sidebar_state="expanded")
 
 # Adding a banner image
-st.image("tel.jpg", use_column_width=True)
+st.image("telco.jpg", use_column_width=True)
 
 # title and header
 st.title('Telco. Customer Churn Prediction')
-st.sidebar.header('Enter Customer Details')
+st.sidebar.header('Customer Details')
 
 input_data = {}
 
@@ -45,7 +45,7 @@ input_data['REVENUE'] = st.sidebar.number_input('Revenue')
 input_data['ARPU_SEGMENT'] = st.sidebar.number_input('Income over 90 Days')
 input_data['FREQUENCE'] = st.sidebar.number_input('Number of Times Client Made an income')
 input_data['REGULARITY'] = st.sidebar.number_input('Regularity')
-input_data['TENURE_LE'] = st.sidebar.number_input('Average Duration in Network', value=0, step=1)
+input_data['TENURE_LE'] = st.sidebar.number_input('Average Duration in Network (Months)', value=9.0, step=0.5)
 
 # convert input data into dataframe
 input_df = pd.DataFrame([input_data])
@@ -64,8 +64,18 @@ if st.button('PREDICT'):
     try:
         prediction = model.predict(input_df)
         if prediction[0] == 1:
-            st.write('The customer is likely to churn.')
+            # st.write('The customer is likely to churn.')
+            st.markdown("<h3 style='color: red;'>The customer is likely to churn.</h3>", unsafe_allow_html=True)
         else:
-            st.write('The customer is not likely to churn.')
+            # st.write('The customer is not likely to churn.')
+            st.markdown("<h3 style='color: green;'>The customer is not likely to churn.</h3>", unsafe_allow_html=True)
     except Exception as e:
         st.write("Error during prediction:", str(e))
+
+
+# Additional sections
+st.markdown("## How It Works")
+st.write("""
+The Telco Customer Churn Prediction app allows you to input customer details and predict the likelihood of churn.
+Simply enter the required details in the sidebar and click the 'PREDICT' button.
+""")
