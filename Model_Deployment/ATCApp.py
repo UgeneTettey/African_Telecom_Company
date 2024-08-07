@@ -28,22 +28,22 @@ input_data = {}
 
 # creating input boxes for each feature: [ ['REGION', 'MONTANT', 'FREQUENCE_RECH', 'REVENUE', 'ARPU_SEGMENT', 'FREQUENCE', 'REGULARITY', 'TENURE_LE']]
 
-'''we use only 8 features since they are the top 8 features
-Important Note: This app does capture comprehensive data of each client.
-Future work must include fields to capture other data inputs for purposes of future projects
-'''
+# '''we use only 8 features since they are the top 8 features
+# Important Note: This app does capture comprehensive data of each client.
+# Future work must include fields to capture other data inputs for purposes of future projects
+# '''
 # ---------------------------------------------------------
 
 
 # input_data['user_id'] = st.sidebar.text_input('customer ID')
 input_data['REGION'] = st.sidebar.selectbox('REGION', options=categorical_features['REGION'])
-input_data['MONTANT'] = st.sidebar.text_input('MONTANT: Top-Up Amount')
-input_data['FREQUENCE_RECH'] = st.sidebar.text_input('Number of Times Refilled')
-input_data['REVENUE'] = st.sidebar.text_input('Revenue')
-input_data['ARPU_SEGMENT'] = st.sidebar.text_input('Income over 90 Days')
-input_data['FREQUENCE'] = st.sidebar.text_input('Number of Times Client Made an income')
-input_data['REGULARITY'] = st.sidebar.text_input('Regularity')
-input_data['TENURE_LE'] = st.sidebar.text_input('Average Duration in Network', value=0, step=1)
+input_data['MONTANT'] = st.sidebar.number_input('MONTANT: Top-Up Amount')
+input_data['FREQUENCE_RECH'] = st.sidebar.number_input('Number of Times Client Refilled')
+input_data['REVENUE'] = st.sidebar.number_input('Revenue')
+input_data['ARPU_SEGMENT'] = st.sidebar.number_input('Income over 90 Days')
+input_data['FREQUENCE'] = st.sidebar.number_input('Number of Times Client Made an income')
+input_data['REGULARITY'] = st.sidebar.number_input('Regularity')
+input_data['TENURE_LE'] = st.sidebar.number_input('Average Duration in Network', value=0, step=1)
 
 # convert input data into dataframe
 input_df = pd.DataFrame([input_data])
