@@ -23,7 +23,7 @@ encoder_dict = {feature: LabelEncoder().fit(values) for feature, values in categ
 st.set_page_config(page_title="Customer Churn Prediction", page_icon=":bar_chart:", layout="centered", initial_sidebar_state="expanded")
 
 # Adding a banner image
-st.image("connected.jpg", use_column_width=True)
+# st.image("connected.jpg", use_column_width=True)
 
 # title and header
 st.title('Telco. Customer Churn Prediction')
