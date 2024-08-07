@@ -9,8 +9,7 @@ model = pickle.load(open('new_xgb_model.pkl', 'rb'))
 
 # categorical features
 categorical_features = {
-    'REGION':['DAKAR','SAINT-LOUIS','TAMBACOUNDA','FATICK','THIES', 'LOUGA', 'KAFFRINE', 'DIOURBEL', 'KOLDA','MATAM', 'SEDHIOU', 'KAOLACK', 'ZIGUINCHOR', 'KEDOUGOU'],
-    'MRG':['No', 'Yes']
+    'REGION':['DAKAR','SAINT-LOUIS','TAMBACOUNDA','FATICK','THIES', 'LOUGA', 'KAFFRINE', 'DIOURBEL', 'KOLDA','MATAM', 'SEDHIOU', 'KAOLACK', 'ZIGUINCHOR', 'KEDOUGOU']
 }
 
 # define ecndoder dictionary
