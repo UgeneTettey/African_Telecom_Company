@@ -6,7 +6,7 @@ We also aim to access the likelihood of customers becoming inactive and disconti
 By leveraging customer data, the model will identify customers at risk of churning, enabling the company to implement targeted retention strategies and interventions.
 
 
-<h2> PROJECT ROADMAP</h2>
+<h2> Project Roadmap</h2>
 This project was a collaboration among dedicated minds who contributed to its success.  
 
 Preprocessing steps included tenure mapping, label encoding, and class balancing (using downsampling).
