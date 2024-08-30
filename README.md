@@ -6,3 +6,16 @@ We also aim to access the likelihood of customers becoming inactive and disconti
 By leveraging customer data, the model will identify customers at risk of churning, enabling the company to implement targeted retention strategies and interventions.
 
 
+<h3> PROJECT ROADMAP</h3>
+This project was a collaboration among dedicated minds who contributed to its success.  
+
+Preprocessing steps included Tenure Mapping, Label encoding, and Class balancing (using downsampling).
+Featured models include:
+1. Logistic Regression (Baseline Model)
+2. Decision Tree Classifier
+3. RandomForest Classifier
+4. Gradient Boosting Classifier
+5. XGBoost Classifier (Adopted Model)
+
+Model was deployed, utilizing steamlit. Link to deployed app is available in the <pre>About</pre> section of this repository.
+
