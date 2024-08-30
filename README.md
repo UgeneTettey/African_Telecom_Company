@@ -9,7 +9,7 @@ By leveraging customer data, the model will identify customers at risk of churni
 <h2> PROJECT ROADMAP</h2>
 This project was a collaboration among dedicated minds who contributed to its success.  
 
-Preprocessing steps included Tenure Mapping, Label encoding, and Class balancing (using downsampling).
+Preprocessing steps included tenure mapping, label encoding, and class balancing (using downsampling).
 Featured models include:
 1. Logistic Regression (Baseline Model)
 2. Decision Tree Classifier
@@ -17,5 +17,4 @@ Featured models include:
 4. Gradient Boosting Classifier
 5. XGBoost Classifier (Adopted Model)
 
-Model was deployed, utilizing steamlit. Link to deployed app is available in the "About" section of this repository.
-
+Model was deployed utilising steamlit. The link to the deployed app is available in the "About" section of this repository.
