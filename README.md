@@ -1,4 +1,4 @@
-<h1> CUSTOMER CHURN PREDICTION  </h1>
+<h1> TELECOM CUSTOMER CHURN PREDICTION  </h1>
 <H2> Overview</H2>
 In the competitive telecommunications industry, customer churn - where customers become inactive and stop purchasing services - is a significant challenge.  
 This project aims to develop a machine learning model to predict the likelihood of customer churn, helping the company to proactively retain its customer base.
