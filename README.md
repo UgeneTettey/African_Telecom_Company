@@ -17,5 +17,5 @@ Featured models include:
 4. Gradient Boosting Classifier
 5. XGBoost Classifier (Adopted Model)
 
-Model was deployed, utilizing steamlit. Link to deployed app is available in the <pre>About</pre> section of this repository.
+Model was deployed, utilizing steamlit. Link to deployed app is available in the "About" section of this repository.
 
